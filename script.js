@@ -8,7 +8,7 @@ const calculateBill = () => {
   
   let totalB=      Number(billTotal.value)*Number((tipInput.value/100)+1);
   let tpp=totalB/Number(numberOfPeople.innerText);
-  totalPerPerson.innerText=tpp;
+  totalPerPerson.innerText=`$${tpp.toFixed(2)}`;
 }
 
 
